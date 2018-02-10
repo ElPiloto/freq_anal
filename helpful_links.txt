@@ -1,0 +1,20 @@
+
+# example of FFT on numeric data
+https://www.dsprelated.com/freebooks/mdft/FFT_Simple_Sinusoid.html
+
+# exampel of what types of windows to use
+http://download.ni.com/evaluation/pxi/Understanding%20FFTs%20and%20Windowing.pdf
+
+# paper on different onset detection methods
+http://www.eecs.qmul.ac.uk/~simond/pub/2006/dafx.pdf
+
+# pydub repo
+https://github.com/jiaaro/pydub/blob/master/API.markdown
+
+# summary and pointers to a bunch of beat detection algorithms
+http://www.badlogicgames.com/wordpress/?p=99
+
+# cosine similarity of music for beat detection
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.93.8485&rep=rep1&type=pdf
+
+
