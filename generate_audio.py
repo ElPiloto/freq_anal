@@ -12,22 +12,22 @@ DURATIONS = [500, 500, 1000., 1000., 1000.]
 WAVE_TYPES = [Sine, silence, Sine, silence, Sine, silence]
 
 # OSCILLATION
-NUM_CYCLES = 10
+NUM_CYCLES = 6
 FREQS = [250, 0] * NUM_CYCLES
 DURATIONS = [500, 500] * NUM_CYCLES
 WAVE_TYPES = [Sine, silence] * NUM_CYCLES
 
 # SINGLE SINE - MULTI SEG
-NUM_CYCLES = 3
-FREQS = [250] * NUM_CYCLES
-DURATIONS = [500] * NUM_CYCLES
-WAVE_TYPES = [Sine] * NUM_CYCLES
+#NUM_CYCLES = 6
+#FREQS = [250] * NUM_CYCLES
+#DURATIONS = [500] * NUM_CYCLES
+#WAVE_TYPES = [Sine] * NUM_CYCLES
 
 # SINGLE SINE - SINGLE SEG
-NUM_CYCLES = 1
-FREQS = [3000]
-DURATIONS = [4000]
-WAVE_TYPES = [Sine]
+#NUM_CYCLES = 1
+#FREQS = [3000]
+#DURATIONS = [4000]
+#WAVE_TYPES = [Sine]
 OUT_NAME = "pure_sine_single_segment.mp3"
 
 def islambda(v):
@@ -50,5 +50,5 @@ for f, d, w in zip(FREQS, DURATIONS, WAVE_TYPES):
   else:
     complete_signal = complete_signal.append(tmp_signal,crossfade=0)
 
-complete_signal.export("./mp3s/{}".format(OUT_NAME), format="mp3", bitrate="192k")
+complete_signal.export("./media/{}".format(OUT_NAME), format="mp3", bitrate="192k")
 
