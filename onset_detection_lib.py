@@ -15,4 +15,13 @@ def spectral_flux(freqs_by_time):
   sum_diff_per_timept = np.sum(diff, axis=0) # sum over frequencies
   return np.pad(sum_diff_per_timept, ((1,0)), mode='constant') # add an extra 0 in the beginning so we have the original length
 
+def phase_deviation(phases_by_time):
+  # tmp is the second derivative
+  tmp = np.diff(np.diff(phases_by_time, axis=0), axis=0)
+  pd = np.mean(tmp, axis=0, keepdims=True)
+  pd = np.pad(pd, ((0,2)), mode='constant') # add an extra 0 in the beginning so we have the original length
+  print("phase deviation output has shape = {}".format(pd.shape))
+  return pd
+  
+
 
